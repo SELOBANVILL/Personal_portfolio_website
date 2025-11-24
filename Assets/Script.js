@@ -127,3 +127,4 @@
   style.innerHTML = `.fade-out{opacity:0;transform:translateY(6px);transition:opacity .22s,var(--sharp);}`;
   document.head.appendChild(style);
 })();
+/*<!-- updated on nov 24 2025 for finals -->*/
