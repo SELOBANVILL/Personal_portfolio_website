@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Moses — Portfolio</title>
+
+  <!-- font (system fallback included) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="Assets/Style.css">
+  <script defer src="Assets/Script.js"></script>
+</head>
+<body class="theme-dark">
+  <!-- Navigation -->
+  <header class="nav-wrap">
+    <div>
+      <span>Moses Anghelo V. Panganiban</span>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="Index.html" class="nav-link active">Home</a></li>
+        <li><a href="About.html" class="nav-link">About</a></li>
+        <li><a href="Portfolio.html" class="nav-link">Projects</a></li>
+        <li><a href="Experience.html" class="nav-link">Experience</a></li>
+        <li><a href="Achievements.html" class="nav-link">Achievements</a></li>
+        <li><a href="Contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page container -->
+  <main id="page" class="page fade-in">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-left">
+        <h1 class="headline">"The key is <span class="accent">Persistence</span> and <span class="accent">Consistency</span>"</h1>
+        <p class="sub">1st year college freshmen Bachelors of Science in Computer Science.</p>
+
+        <div class="cta-row">
+          <a href="#widgets" class="btn btn-primary">Explore More about me</a>
+        </div>
+
+        <div class="meta-widgets">
+          <div class="stat-card">
+            <div class="stat-num" data-target="3">0</div>
+            <div class="stat-label">Projects</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-num" data-target="13">0</div>
+            <div class="stat-label">Years Learning</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-num" data-target="93">0</div>
+            <div class="stat-label">SHS GPA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="device-card">
+          <!-- use one of your uploaded images as mock window screenshot -->
+          <img src="assets/Images/first image.png" alt="Photo of Moses Panganiban" style="width:100px;height:100px;" />
+          <div class="glow"></div>
+        </div>
+
+        <div class="skill-widgets">
+          <div class="skill">
+            <label>HTML / CSS / C++</label>
+            <div class="skill-bar" data-percent="92"><div></div></div>
+          </div>
+          <div class="skill">
+            <label>Java</label>
+            <div class="skill-bar" data-percent="84"><div></div></div>
+          </div>
+          <div class="skill">
+            <label>Python</label>
+            <div class="skill-bar" data-percent="78"><div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="widgets">
+  <h1 class="panel-head">Hobbies & Interests</h1>
+  <div class="card">
+
+    <p>
+      <span class="label">Sports</span>
+      <img class="preview" src="assets/Images/sports.png">
+    </p>
+
+    <p>
+      <span class="label">Gaming</span>
+      <img class="preview" src="assets/Images/gaming.png">
+    </p>
+
+    <p>
+      <span class="label">Arts</span>
+      <img class="preview" src="assets/Images/art.png">
+    </p>
+
+  </div>
+</section>
+
+    <!-- Projects preview -->
+    <section class="panel project-preview">
+      <div class="panel-head">
+        <h2>Intro / Mission / Vision</h2>
+        <p class="muted">Click a card to open details</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card" data-title="Introduction" data-desc="Hi, I’m Moses Anghelo V. Panganiban, an 18-year-old first-year BS Computer Science student at CIIT. I’m passionate about technology and dedicated to becoming a software engineer who builds meaningful, efficient, and future-ready solutions. I’m committed to continuous learning, improving my craft, and shaping a successful career in the tech industry." data-demo="#">
+          <header><h3>Introduction</h3></header>
+          <p class="muted">ME</p>
+        </article>
+
+        <article class="project-card" data-title="Mission" data-desc="My mission is to develop strong foundations in computer science, sharpen my technical abilities, and immerse myself in real-world projects that strengthen my skills. I aim to approach every opportunity with dedication, curiosity, and professionalism—striving to create software that is efficient, user-focused, and aligned with the evolving demands of the digital world." data-demo="#">
+          <header><h3>Mission</h3></header>
+          <p class="muted">My life's mission</p>
+        </article>
+
+        <article class="project-card" data-title="Vision" data-desc="To become a skilled and impactful software engineer who contributes innovative, reliable, and meaningful technological solutions that improve the lives of others. I aspire to grow continuously, embrace new challenges, and build a successful future in the tech industry through creativity, discipline, and lifelong learning." data-demo="#">
+          <header><h3>Vision</h3></header>
+          <p class="muted">My life's vision</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="foot">
+      <div>© <span id="year"></span> Moses Panganiban — Built with focus on clarity & polish</div>
+      <div class="socials muted">GitHub • Facebook • Email</div>
+    </footer>
+  </main>
+
+  <!-- Project modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <div class="modal-actions">
+        <a id="modal-demo" ></a>
+        <a id="modal-git" ></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
